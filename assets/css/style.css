@@ -18,8 +18,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     width: 100%;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 
@@ -112,6 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 /* button_________________  */
 
 .btn {
+    text-align: center;
     display: inline-block;
     vertical-align: top;
     font-size: 13px;
@@ -134,6 +136,9 @@ h1, h2, h3, h4, h5, h6 {
     background: #c95d5d;
 }
 
+.btn--long {
+    min-width: 280px;
+}
 
 /* features_________________  */
 
@@ -230,20 +235,242 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team {
-    margin: 100px 0;
+    margin: 100px 0 70px;
 }
 
 .team__flex {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -15px;
 }
 
 .team__item {
     width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
 }
 
 .team__photo {
     display: block;
     max-width: 100%;
     height: auto;
+    margin-bottom: 20px;
+}
+
+.team__name {
+   color: #2d3033;
+   font-size: 22px;
+   margin-bottom: 10px;;
+
+}
+
+.team__position {
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+    color: #ea5151;
+    font-size: 13px;
+}
+
+.team__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6c7279;
+    margin-bottom: 20px;
+
+}
+
+/* SOcial _____________________ */
+
+.social {
+    display: flex;
+}
+
+.social--footer {
+    justify-content: center;
+}
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+    border: 1px solid #e8ecee;
+    background-color: #ffffff;
+
+    transition: background .5s linear;
+
+}
+
+.social__item:hover {
+    background: #e8ecee;
+}
+
+.social__item:hover .social__icon {
+    fill: #ea5151;
+}
+
+.social__icon {
+    fill: #c6cacc;
+    display: block;
+    height: 18px;
+
+    transition: fill .5s linear;
+}
+
+
+.social--footer .social__item {
+    background: none;
+    border: 2px solid #fff;
+    fill: #ffffff;
+}
+
+
+/*  reviews-------*/
+
+.reviews {
+    overflow: hidden;
+    background-color: #53354a;
+}
+
+.reviews__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews__photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+.reviews__img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.reviews__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 80px;
+}
+
+.reviews__text {
+    margin-bottom: 25px;
+
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #ffffff;
+
+}
+
+.reviews__author {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
+/* DOWNLOAD____________ */
+
+.download {
+    margin: 90px 0;
+
+    text-align: center;
+}
+
+
+.download__title {
+    margin-bottom: 10px;
+
+    font-size: 28px;
+    color: #2d3033;
+    font-weight:300px;
+}
+
+.download__text {
+margin-bottom: 30px;
+
+font-size: 13px;
+color: #2d3033;
+text-transform: uppercase;
+font-weight: 700;
+
+}
+
+/* footer________ */
+
+.footer {
+  
+
+    background-color: #3a3e64;
+
+}
+
+.footer__inner {
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.footer__col {
+    width: 33.3333333%;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.footer__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.footer__address {
+    font-style: normal;
+    color: rgba(250, 250, 250, 0.5);
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.footer__text {
+    color: rgba(250, 250, 250, 0.5);
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+
+
+.footer__copyright {
+    background: #313454;
+    padding: 20px 0;
+}
+
+.copyright__text {
+    
+    text-align: center;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #808080;
+}
+
+.copyright__text span {
+    color: #ffffff;
+}
+
+#hearth {
+    color: red;
 }
