@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* header_________________  */
+/* header */
 
 
 .header {
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* intro____________  */
+/* intro */
 
 .intro {
     height: 750px;
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 70px;
 }
 
-/* button_________________  */
+/* button  */
 
 .btn {
     text-align: center;
@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 280px;
 }
 
-/* features_________________  */
+/* features  */
 
 .features {
     display: flex;
@@ -175,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #6c7279;
 }
 
-/* __WORkS________________________ */
+/* __WORkS*/
 
 .works {
     display: flex;
@@ -191,7 +191,8 @@ h1, h2, h3, h4, h5, h6 {
     border-right: 1px solid white;
 }
 
-.works_image {
+.works__image {
+    min-width: 100%;
     position:absolute;
     top: 50%;
     left: 50%;
@@ -280,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-/* SOcial _____________________ */
+/* SOcial */
 
 .social {
     display: flex;
@@ -382,7 +383,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* DOWNLOAD____________ */
+/* DOWNLOAD */
 
 .download {
     margin: 90px 0;
@@ -409,7 +410,7 @@ font-weight: 700;
 
 }
 
-/* footer________ */
+/* footer*/
 
 .footer {
   
@@ -473,4 +474,195 @@ font-weight: 700;
 
 #hearth {
     color: red;
+}
+
+/* burger */
+.burger:active, .burger:focus {
+    outline: none;
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 2px;
+}
+
+.burger__item {
+    display: block;
+    width: 30px;
+    height: 3px;
+
+    background-color: #ffffff;
+    position: relative;
+}
+
+.burger__item::before, 
+.burger__item::after {
+    content: "";
+
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+.burger__item::before {
+    top: -8px;
+}
+
+.burger__item::after {
+    bottom: -8px;
+}
+
+/* Media */
+
+@media (max-width: 1300px) {
+    /* WORKS*/
+   
+
+    .works__item {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    /* burger */
+
+    .burger {
+        display: block;
+    }
+
+    /* nav */
+    .nav {
+        display: none;
+    }
+
+    /* burger */
+     .burger {
+        display: block;
+    }
+
+    /* intro======== */
+
+    .intro__title {
+        font-size: 40px;
+    }
+
+
+
+    /* features */
+
+    .features__item {
+        width: 50%;
+    }
+
+    /* team */ 
+
+    .team__item {
+        width: 50%;
+
+        text-align: center;
+    }
+
+    .team__photo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* social */ 
+    .social {
+       justify-content: center; 
+    }
+
+
+    /* reviews */
+
+    .reviews__photo {
+        width: 100%;
+        overflow: hidden;
+        margin: 15px 0 40px;
+    }
+
+    .reviews__content {
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 40px;
+    }
+
+    .reviews__img {
+        min-width: 991px;
+        right: -15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .intro {
+        height: auto;
+        padding-top: 130px;
+        padding-bottom: 30px;
+    }
+    
+
+    .intro__title {
+        font-size: 30px;
+    }
+
+    .intro__subtitle {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+/* features*/
+    
+    .features__item {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* WORKS______ */
+  
+    .works__item {
+        
+        width: 100%;
+  
+    }
+
+    
+    /* reviews */
+    .reviews__text {
+        font-size: 25px;
+    }
+
+
+    /* footer */ 
+
+    .footer__inner {
+        padding: 20px 0;
+    }
+
+    .footer__col {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .footer__col:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 414px) {
+
+    /* reviews */
+
+    .reviews__img {
+        right: -200px;
+    }
 }
