@@ -36,6 +36,17 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.header.fixed {
+    height: auto;
+    position: fixed;
+    background-color: #2e304a;
+}
+
+.header.fixed .header__inner {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -539,7 +550,25 @@ font-weight: 700;
 
     /* nav */
     .nav {
-        display: none;
+        display: none; 
+        width: 100%;
+        flex-direction: column;
+        background-color: #2e304a;
+        text-align: right;
+
+        position: absolute;
+        right: 0;
+        top: 100%;
+      
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav__link {
+        padding: 7px 15px;
+        
     }
 
     /* burger */
